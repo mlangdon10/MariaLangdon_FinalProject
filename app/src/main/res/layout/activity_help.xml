@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_background"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".help"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-16dp">
+
+    <TextView
+        android:id="@+id/helpTitle"
+        android:layout_width="131dp"
+        android:layout_height="70dp"
+        android:text="HELP"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/howTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to use the app: "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <ScrollView
+        android:layout_width="364dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tvHowTo"
+            android:layout_width="366dp"
+            android:layout_height="177dp"
+            android:scrollbars="vertical"
+            android:text="If you are a new user, you can create an account just by pressing the button, entering your email, and creating a password. You will then be given access to your inventory where you can add an entry if you want to. When you return to the app later, you will be able to login and access you inventory and add to it. "
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="538dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The purpose of the app:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <ScrollView
+        android:layout_width="366dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tvPurpose"
+            android:layout_width="366dp"
+            android:layout_height="177dp"
+            android:scrollbars="vertical"
+            android:text="This app allows you to keep track of your gift purchases and ideas. After logging in, you can either view your previous gift entries or you can add a new one. For each entry, you can track who the gift is for, what the gift is, how much it costs, the date you ordered it, what event the gift is for, and the status of the gift. The status measures whether you have payed for, ordered, received, wrapped, or given your gift to the receiver."
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="118dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/preferencesHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferences:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <ScrollView
+        android:layout_width="365dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tvPreferences"
+            android:layout_width="366dp"
+            android:layout_height="177dp"
+            android:scrollbars="vertical"
+            android:text="In the preferences settings tab, you will be able to change the theme of your app interface between light mode and dark mode. This will only affect the color of the app, adapting to your preference. When you exit the app, your choice of dark or light mode will be saved so that when you open the app again, it will remain the way it was when you last logged out. You will be able to change this setting whenever you would like."
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="327dp" />
+    </ScrollView>
+
+</LinearLayout>

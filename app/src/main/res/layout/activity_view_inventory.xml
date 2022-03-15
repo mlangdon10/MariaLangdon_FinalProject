@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_background"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".view_inventory">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Gift Inventory"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:fadeScrollbars="false">
+
+            <TableLayout
+                android:id="@+id/tb1"
+                android:layout_width="397dp"
+                android:layout_height="542dp"
+                android:scrollbars="horizontal"
+                android:stretchColumns="*"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <TableRow
+                    android:id="@+id/tbRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="473dp">
+
+                    <TextView
+                        android:id="@+id/tReceiver"
+                        android:layout_width="113dp"
+                        android:layout_height="match_parent"
+                        android:text="Receiver"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="473dp" />
+
+                    <TextView
+                        android:id="@+id/tItem"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="Item"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="72dp"
+                        tools:layout_editor_absoluteY="473dp" />
+
+                    <TextView
+                        android:id="@+id/tPrice"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:text="Price"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textColorLink="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="117dp"
+                        tools:layout_editor_absoluteY="473dp" />
+
+                    <TextView
+                        android:id="@+id/tDate"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:text="Date"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textColorLink="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="165dp"
+                        tools:layout_editor_absoluteY="473dp" />
+
+                    <TextView
+                        android:id="@+id/tEvent"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:text="Event"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textColorLink="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="267dp"
+                        tools:layout_editor_absoluteY="473dp" />
+
+                    <TextView
+                        android:id="@+id/tStatus"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:text="Status"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textColorLink="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="211dp"
+                        tools:layout_editor_absoluteY="473dp" />
+
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btAdd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BD161B"
+        android:text="Add entry"
+        />
+
+</LinearLayout>
